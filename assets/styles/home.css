@@ -11,25 +11,18 @@ nav ul li a { text-decoration: none; font-family: Inter; color: var(--white); }
 
 .hero { display: flex; justify-content: center; width: 100%; }
 .hero .container { display: flex; justify-content: space-between; align-items: center; max-width: 1250px; }
-
 .hero .container .right { display: flex; flex-direction: column; justify-content: space-around; gap: 30px; width: 750px; }
-
 .hero .container .right h1 { font-family: Montserrat; font-weight: 800; font-size: 90px; color: var(--red-clear); text-shadow: -2px 2px 2px #000000; }
 .hero .container .right .text { width: 650px; }
 .hero .container .right .text p { font-family: Inter; font-size: 20px; }
-
 .hero .container .right .buttons { display: flex; width: 100%; justify-content: flex-start; gap: 40px; font-family: Arial; font-size: 20px; }
 .hero .container .right .buttons .btn-primary { background: linear-gradient(to right, var(--red-clear), var(--red-dark)); padding: 12px 60px; border-radius: 20px; transition: all 0.5s; }
 .hero .container .right .buttons .btn-secondary { padding: 12px 40px; border: 2px solid var(--red-clear); border-radius: 20px; }
-
-button { border: none; background: none; }
-
 .hero .container .left img { width: 400px; }
 
 .facts-of-spiderman { display: flex; justify-content: center; }
 .facts-of-spiderman .container { max-width: 1250px; display: flex; flex-direction: column; align-items: center; transform: translateY(100px);}
 .facts-of-spiderman .container h2{ font-family: Montserrat; font-size: 55px; font-weight: 700; transform: translateY(30px);}
-
 .facts-of-spiderman .container .list-of-facts { background-color: var(--white); width: 100%; border-radius: 20px; box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.46); -webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.46); -moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.46); display: flex; justify-content: center; flex-wrap: wrap; padding: 20px; gap: 40px; }
 .facts-of-spiderman .container .list-of-facts ul { display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 40px 0px }
 .facts-of-spiderman .container .list-of-facts ul li { width: 300px; padding: 50px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 30px; font-family: Montserrat; } 
@@ -49,73 +42,20 @@ button { border: none; background: none; }
 .remember .container { width: 1250px; display: flex; justify-content: flex-end; align-items: center; }
 .remember .container h2{ max-width: 700px; font-family: Montserrat; font-size: 50px; font-weight: 700; text-align: end; color: var(--white); }
 
-footer {
-    background-color: #131313;
-}
-
-footer img {
-    width: 200px;
-}
-
-footer .container {
-    width: 1250px;
-    margin: auto;
-}
-
-footer .container .info {
-    display: flex;
-
-}
-
-footer .container .form-container h2 {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-footer .container .form-container form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
-
-footer .container .form-container form label {
-    grid-column: span 2;
-    margin-top: 10px;
-}
-
-footer .container .form-container form input,
-footer .container .form-container form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    outline: none;
-    color: white;
-}
-
-footer .container .form-container form input:focus,
-footer .container .form-container form textarea:focus {
-    border-color: #E04749;
-}
-
-footer .container .form-container form textarea {
-    grid-column: span 2;
-    height: 100px;
-    resize: none;
-}
-
-footer .container .form-container button {
-    grid-column: span 2;
-    padding: 10px;
-    background-color: #E04749;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-footer .container .form-container button:hover {
-    background-color: #c83e41;
-}
+footer { background-color: #131313; color: white; padding-top: 50px; }
+footer .container { max-width: 1250px; margin: auto; }
+footer .container img { width: 250px; padding-bottom: 30px; }
+footer .container .info { display: flex; justify-content: space-between; width: 100%; align-items: flex-start; /* Asegura que los elementos dentro de .info estén alineados en la parte superior */ }
+footer .container .info ul { list-style: none; padding: 0; margin: 0 20px 0 0; font-family: Inter; font-size: 18px; }
+footer .container .info ul li { margin-bottom: 50px; }
+footer .container .info ul li a { color: white; text-decoration: none; }
+footer .container .form-container { max-width: 400px; width: 100%; }
+footer .container .form-container h2 { text-align: left; margin-bottom: 20px; font-family: Montserrat; font-size: 22px; font-weight: 700; }
+footer .container .form-container form { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; }
+footer .container .form-container form input, footer .container .form-container form textarea { width: 100%; padding: 10px; border: 2px solid #ccc; border-radius: 7px; box-sizing: border-box; outline: none; color: var(--white); background-color: transparent; font-family: Montserrat; }
+footer .container .form-container form input:focus, footer .container .form-container form textarea:focus { border-color: var(--red-clear); }
+footer .container .form-container form textarea { grid-column: span 2; height: 100px; resize: none; }
+footer .container .form-container button { grid-column: span 2; padding: 10px; background-color: var(--red-clear); color: var(--white); border: none; border-radius: 7px; cursor: pointer; margin-top: 10px; transition: all 0.3s; }
+footer .container .form-container button:hover { background-color: var(--red-dark); }
+footer .copyright { background-color: var(--black); display: flex; justify-content: space-between; margin-top: 50px; padding: 20px 70px; color: var(--white); }
+footer .copyright .networks img { width: 60px; padding: 0px 20px; }
