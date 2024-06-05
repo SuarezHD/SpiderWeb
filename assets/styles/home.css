@@ -12,13 +12,15 @@ nav ul li a { text-decoration: none; font-family: Inter; color: var(--white); }
 .hero { display: flex; justify-content: center; width: 100%; }
 .hero .container { display: flex; justify-content: space-between; align-items: center; max-width: 1250px; }
 .hero .container .right { display: flex; flex-direction: column; justify-content: space-around; gap: 30px; width: 750px; }
-.hero .container .right h1 { font-family: Montserrat; font-weight: 800; font-size: 90px; color: var(--red-clear); text-shadow: -2px 2px 2px #000000; }
+.hero .container .right h1 { font-family: Montserrat; font-weight: 800; font-size: 90px; color: var(--red-clear); text-shadow: -2px 2px 2px var(--black); }
 .hero .container .right .text { width: 650px; }
 .hero .container .right .text p { font-family: Inter; font-size: 20px; }
 .hero .container .right .buttons { display: flex; width: 100%; justify-content: flex-start; gap: 40px; font-family: Arial; font-size: 20px; }
 .hero .container .right .buttons .btn-primary { background: linear-gradient(to right, var(--red-clear), var(--red-dark)); padding: 12px 60px; border-radius: 20px; transition: all 0.5s; }
 .hero .container .right .buttons .btn-secondary { padding: 12px 40px; border: 2px solid var(--red-clear); border-radius: 20px; }
 .hero .container .left img { width: 400px; }
+
+/* Section Facts of spiderman */
 
 .facts-of-spiderman { display: flex; justify-content: center; }
 .facts-of-spiderman .container { max-width: 1250px; display: flex; flex-direction: column; align-items: center; transform: translateY(100px);}
@@ -29,6 +31,8 @@ nav ul li a { text-decoration: none; font-family: Inter; color: var(--white); }
 .facts-of-spiderman .container .list-of-facts ul li h3 { font-family: Montserrat; font-weight: 700; }
 .facts-of-spiderman .container .list-of-facts ul li a { text-decoration: none; color: var(--black); font-weight: 700; }
 .facts-of-spiderman .container .list-of-facts ul li a i { padding: 0px 8px; }
+
+/*  */
 
 .tastes { background: linear-gradient(var(--red-clear), var(--red-dark)); height: 80vh; }
 .tastes .container { display: flex; justify-content: center; align-items: center; height: 100%; font-family: Montserrat; font-size: 50px; font-weight: 700; color: var(--white);}
@@ -42,13 +46,13 @@ nav ul li a { text-decoration: none; font-family: Inter; color: var(--white); }
 .remember .container { width: 1250px; display: flex; justify-content: flex-end; align-items: center; }
 .remember .container h2{ max-width: 700px; font-family: Montserrat; font-size: 50px; font-weight: 700; text-align: end; color: var(--white); }
 
-footer { background-color: #131313; color: white; padding-top: 50px; }
+footer { background-color: var(--black-clear); color: var(--white); padding-top: 50px; }
 footer .container { max-width: 1250px; margin: auto; }
 footer .container img { width: 250px; padding-bottom: 30px; }
 footer .container .info { display: flex; justify-content: space-between; width: 100%; align-items: flex-start; /* Asegura que los elementos dentro de .info estén alineados en la parte superior */ }
 footer .container .info ul { list-style: none; padding: 0; margin: 0 20px 0 0; font-family: Inter; font-size: 18px; }
 footer .container .info ul li { margin-bottom: 50px; }
-footer .container .info ul li a { color: white; text-decoration: none; }
+footer .container .info ul li a { color: var(--white); text-decoration: none; }
 footer .container .form-container { max-width: 400px; width: 100%; }
 footer .container .form-container h2 { text-align: left; margin-bottom: 20px; font-family: Montserrat; font-size: 22px; font-weight: 700; }
 footer .container .form-container form { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; }
@@ -59,3 +63,64 @@ footer .container .form-container button { grid-column: span 2; padding: 10px; b
 footer .container .form-container button:hover { background-color: var(--red-dark); }
 footer .copyright { background-color: var(--black); display: flex; justify-content: space-between; margin-top: 50px; padding: 20px 70px; color: var(--white); }
 footer .copyright .networks img { width: 60px; padding: 0px 20px; }
+
+
+/* Breakpoint 1280px */
+@media (max-width: 1280px) {
+    body {
+        font-size: 18px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+}
+
+/* Breakpoint 1024px */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header, main, footer {
+        padding: 10px;
+    }
+}
+
+/* Breakpoint 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, main, footer {
+        padding: 8px;
+    }
+
+    header, footer {
+        text-align: left;
+    }
+
+    main {
+        text-align: justify;
+    }
+}
+
+/* Breakpoint 540px */
+@media (max-width: 540px) {
+    body {
+        font-size: 12px;
+    }
+
+    header, main, footer {
+        padding: 5px;
+    }
+
+    header, footer {
+        text-align: left;
+    }
+
+    main {
+        text-align: justify;
+    }
+}
