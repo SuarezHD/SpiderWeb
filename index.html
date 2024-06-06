@@ -10,26 +10,32 @@
 </head>
 
 <body>
-    <nav>
-        <img src="assets/img/SpiderWeb.png" alt="Logo SpiderWeb">
-        <ul>
-            <li>
-                <a href="#hero"> Home </a>
-            </li>
-            <li>
-                <a href="#"> Facts </a>
-            </li>
-            <li>
-                <a href="#"> Tastes </a>
-            </li>
-            <li>
-                <a href="#"> Remember </a>
-            </li>
-            <li>
-                <a href="#"> Contact </a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <img src="assets/img/SpiderWeb.png" alt="Logo SpiderWeb">
+            <button id="abrir" class="abrir-menu">Abrir</button>
+            <div class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#hero"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#"> Facts </a>
+                    </li>
+                    <li>
+                        <a href="#"> Tastes </a>
+                    </li>
+                    <li>
+                        <a href="#"> Remember </a>
+                    </li>
+                    <li>
+                        <a href="#"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section id="hero" class="hero">
         <div class="container">
             <div class="right">
@@ -158,6 +164,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/menu-hamburguesa.js"></script>
 </body>
 
 </html>
