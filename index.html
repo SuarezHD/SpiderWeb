@@ -10,27 +10,32 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <img src="assets/img/SpiderWeb.png" alt="Logo SpiderWeb">
-            <button id="abrir" class="abrir-menu">Abrir</button>
+            <div class="logo">
+                <a href="#">
+                    <i class="fa-solid fa-spider"></i>
+                    <h2>Spider<span>Web</span></h2>
+                </a>
+            </div>
+            <div id="abrir" class="abrir-menu">Abrir</div>
             <div class="nav" id="nav">
-                <button class="cerrar-menu" id="cerrar">Cerrar</button>
+                <div class="cerrar-menu" id="cerrar">Cerrar</div>
                 <ul class="nav-list">
                     <li>
-                        <a href="#hero"> Home </a>
+                        <a href="#hero">Home</a>
                     </li>
                     <li>
-                        <a href="#"> Facts </a>
+                        <a href="#facts"> Facts </a>
                     </li>
                     <li>
-                        <a href="#"> Tastes </a>
+                        <a href="#tastes"> Tastes </a>
                     </li>
                     <li>
-                        <a href="#"> Remember </a>
+                        <a href="#remember"> Remember </a>
                     </li>
                     <li>
-                        <a href="#"> Contact </a>
+                        <a href="#footer"> Contact </a>
                     </li>
                 </ul>
             </div>
@@ -47,8 +52,8 @@
                     </p>
                 </div>
                 <div class="buttons">
-                    <button class="btn-primary">nosequeponer</button>
-                    <button class="btn-secondary">acatampoco</button>
+                    <button class="btn">nosequeponer</button>
+                    <button class="btn secondary">acatampoco</button>
                 </div>
             </div>
             <div class="left">
@@ -56,7 +61,7 @@
             </div>
         </div>
     </section>
-    <section class="facts-of-spiderman">
+    <section class="facts-of-spiderman" id="facts">
         <div class="container">
             <h2>
                 Facts about Spider-man
@@ -66,37 +71,45 @@
                     <li data-modal="creation">
                         <h3>Creation and First Appearance</h3>
                         <p>Spider-Man was created by writer Stan Lee and artist Steve Ditko.</p>
-                        <a href="">Shore more <i class="fa-solid fa-person"></i> </a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="fa-solid fa-person"></i></a>
                     </li>
                     <li data-modal="identity">
                         <h3>Secret identity</h3>
                         <p>Spider-Man's secret identity is...</p>
-                        <a href="">Show more <i class="fa-solid fa-user-secret"></i> </a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="fa-solid fa-user-secret"></i> </a>
                     </li>
                     <li data-modal="powers">
                         <h3>Powers and Abilities</h3>
                         <p>Spider-Man possesses superhuman strength, agility.</p>
-                        <a href="">Show more <i class="fa-solid fa-spider"></i> </a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/watch?v=WZIvB_C8GB8')">Show more <i class="fa-solid fa-spider"></i> </a>
                     </li>
                     <li data-modal="multiverse">
                         <h3>Multiverse and Alternate Versions</h3>
                         <p>Spider-Man has many alternate versions in the Marvel multiverse.</p>
-                        <a href="">Show more <i class="fa-solid fa-globe"></i> </a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/watch?v=uKOE1BBda-E')">Show more <i class="fa-solid fa-globe"></i> </a>
                     </li>
                     <li data-modal="villains">
                         <h3>Iconic Villains</h3>
                         <p>Spider-Man has faced many villains over the years</p>
-                        <a href="">Show more <i class="fa-brands fa-optin-monster"></i></a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/watch?v=fkFsQNsikkQ')">Show more <i class="fa-brands fa-optin-monster"></i></a>
                     </li>
                     <li data-modal="film">
                         <h3>Film Adaptations</h3>
                         <p>Spider-Man has appeared in numerous films.</p>
-                        <a href="">Show more <i class="fa-solid fa-film"></i></a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="fa-solid fa-film"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <div class="popup-container" id="popupContainer">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <iframe id="popupVideo" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
     <section id="tastes" class="tastes">
         <div class="container">
             <h2>
@@ -104,22 +117,26 @@
             </h2>
         </div>
     </section>
-    <section class="bests-spidermans">
+    <section class="bests-spidermans" >
         <div class="container">
-            <div class="images">
+            <figure class="figure-container">
                 <img src="assets/img/spiderpunk.jpeg" alt="Spiderpunk">
+                <figcaption class="figcaption-overlay">The drippiest spiderman</figcaption>
+            </figure>
+            <figure class="figure-container">
                 <img src="assets/img/spiderman-616.jpeg" alt="Spiderman earth 616">
-            </div>
+                <figcaption class="figcaption-overlay">The best spiderman</figcaption>
+            </figure>
         </div>
     </section>
-    <section class="remember">
+    <section class="remember" id="remember">
         <div class="container">
             <h2>
                 “With great power comes great responsibility"
             </h2>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <img src="assets/img/SpiderWeb.png" alt="Logo SpiderWeb">
             <div class="info">
@@ -158,13 +175,15 @@
                 © 2024 SpiderWeb
             </span>
             <div class="networks">
-                <a href="https://instagram.com/szmattii"><img src="assets/img/instagramLogo.svg" alt="Logo de instagram"></a>
+                <a href="https://instagram.com/szmattii"><img src="assets/img/instagramLogo.svg"
+                        alt="Logo de instagram"></a>
                 <a href="https://x.com/szmatti"><img src="assets/img/xLogo.svg" alt="Logo de x"></a>
-                <a href="https://www.tiktok.com/@szmaatii"><img src="assets/img/tiktokLogo.svg" alt="Logo de tiktok"></a>
+                <a href="https://www.tiktok.com/@szmaatii"><img src="assets/img/tiktokLogo.svg"
+                        alt="Logo de tiktok"></a>
             </div>
         </div>
     </footer>
-    <script src="assets/js/menu-hamburguesa.js"></script>
+    <script src="assets/js/functions.js"></script>
 </body>
 
 </html>
