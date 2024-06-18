@@ -122,41 +122,15 @@ footer .copyright .networks img { max-width: 25px; width: 100%; }
     .abrir-menu { color: #1c1c1c; }
     .cerrar-menu { color: #ececec; }
 
-    .nav { 
-        opacity: 0; 
-        visibility: hidden; 
-        display: flex; 
-        flex-direction: column; 
-        gap: 1rem; 
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        bottom: 0; 
-        background-color: var(--red-clear); 
-        padding: 2rem; 
-        box-shadow: 0 0 0 100vmax var(--red-clear); 
-        z-index: 150; /* Asegurar que el menú esté por encima del resto del contenido */
-        transform: translateX(-100%); /* Ocultar inicialmente el menú */
-        transition: transform 0.3s ease;
-    }
+    .nav { opacity: 0; visibility: hidden; display: flex; flex-direction: column; gap: 1rem; position: absolute; top: 0; left: 0; bottom: 0; background-color: var(--red-clear); padding: 2rem; box-shadow: 0 0 0 100vmax var(--red-clear); z-index: 150; /* Asegurar que el menú esté por encima del resto del contenido */ transform: translateX(-100%); /* Ocultar inicialmente el menú */ transition: transform 0.3s ease; }
 
-    .nav.visible { 
-        opacity: 1; 
-        visibility: visible; 
-        transform: translateX(0); /* Mostrar el menú al tener la clase .visible */
-    }
+    .nav.visible { opacity: 1; visibility: visible; transform: translateX(0); }
 
-    .nav-list { 
-        flex-direction: column; 
-    }
+    .nav-list { flex-direction: column; }
 
-    .nav-list li a { 
-        color: #ecececec; /* Color de los enlaces del menú */
-        transition: color 0.5s; 
-    }
+    .nav-list li a { color: #ecececec; transition: color 0.5s; }
 
-    .nav-list li a:hover { 
-        color:#ccc}
+    .nav-list li a:hover { color:#ccc}
 
     .hero .container {max-width: 800px;}
     .hero .container .right h1 { font-size: 60px;}
