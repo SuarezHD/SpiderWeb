@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Spider Web</title>
     <link rel="icon" type="image/x-icon" href="assets/img/arania-icono.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -65,35 +72,36 @@
         <div class="container">
             <h2>
                 Facts about Spider-man
+                <i class="icon-icons8-spider-man-antiguo-1"></i>
             </h2>
             <div class="list-of-facts">
                 <ul>
-                    <li data-modal="creation">
+                    <li data-modal="creation" class="creation reveal">
                         <h3>Creation and First Appearance</h3>
                         <p>Spider-Man was created by writer Stan Lee and artist Steve Ditko.</p>
-                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="fa-solid fa-person"></i></a>
+                        <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="icon-marvel"></i></a>
                     </li>
-                    <li data-modal="identity">
+                    <li data-modal="identity" class="identity reveal">
                         <h3>Secret identity</h3>
                         <p>Spider-Man's secret identity is...</p>
                         <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="fa-solid fa-user-secret"></i> </a>
                     </li>
-                    <li data-modal="powers">
+                    <li data-modal="powers" class="powers reveal">
                         <h3>Powers and Abilities</h3>
                         <p>Spider-Man possesses superhuman strength, agility.</p>
                         <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/watch?v=WZIvB_C8GB8')">Show more <i class="fa-solid fa-spider"></i> </a>
                     </li>
-                    <li data-modal="multiverse">
+                    <li data-modal="multiverse" class="multiverse reveal">
                         <h3>Multiverse and Alternate Versions</h3>
                         <p>Spider-Man has many alternate versions in the Marvel multiverse.</p>
                         <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/watch?v=uKOE1BBda-E')">Show more <i class="fa-solid fa-globe"></i> </a>
                     </li>
-                    <li data-modal="villains">
+                    <li data-modal="villains" class="villains reveal">
                         <h3>Iconic Villains</h3>
                         <p>Spider-Man has faced many villains over the years</p>
                         <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/watch?v=fkFsQNsikkQ')">Show more <i class="fa-brands fa-optin-monster"></i></a>
                     </li>
-                    <li data-modal="film">
+                    <li data-modal="film" class="film reveal">
                         <h3>Film Adaptations</h3>
                         <p>Spider-Man has appeared in numerous films.</p>
                         <a href="javascript:void(0)" onclick="showPopup('https://www.youtube.com/embed/tgbNymZ7vqY')">Show more <i class="fa-solid fa-film"></i></a>
@@ -112,7 +120,7 @@
     
     <section id="tastes" class="tastes">
         <div class="container">
-            <h2>
+            <h2 class="reveal">
                 Tastes are tastes but
             </h2>
         </div>
@@ -120,11 +128,11 @@
     <section class="bests-spidermans" >
         <div class="container">
             <figure class="figure-container">
-                <img src="assets/img/spiderpunk.jpeg" alt="Spiderpunk">
+                <img src="assets/img/spiderpunk.jpeg" class="reveal" alt="Spiderpunk">
                 <figcaption class="figcaption-overlay">The drippiest spiderman</figcaption>
             </figure>
             <figure class="figure-container">
-                <img src="assets/img/spiderman-616.jpeg" alt="Spiderman earth 616">
+                <img src="assets/img/spiderman-616.jpeg" class="reveal" alt="Spiderman earth 616">
                 <figcaption class="figcaption-overlay">The best spiderman</figcaption>
             </figure>
         </div>
@@ -134,6 +142,28 @@
             <h2>
                 “With great power comes great responsibility"
             </h2>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="assets/img/gallery-1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/gallery-2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/gallery-3.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/gallery-4.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/gallery-5.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="assets/img/gallery-6.jpg" alt=""><div class="card-text">
+                    Solo es un salto de fe...
+                  </div></div>
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
         </div>
     </section>
     <footer id="footer">

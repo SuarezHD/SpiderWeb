@@ -17,7 +17,6 @@ links.forEach(link => {
     });
 });
 
-
 // Function Scroll
 
 const elemento = document.querySelector('#header');
@@ -39,7 +38,7 @@ function manejarScroll() {
 
 window.addEventListener('scroll', manejarScroll);
 
-// 
+// Funcion popup para los label
 
 function showPopup(videoUrl) {
   var popup = document.getElementById('popupContainer');
@@ -59,6 +58,49 @@ function closePopup() {
   popup.style.display = 'none';
 }
 
+// Reveal 
 
-// 
+function reveal() {
+  var windowHeight = jQuery(window).height();
+  var elementVisible = 150;
+  var elementTop;
+  var positionYscroll = window.pageYOffset;
+  var position;
 
+  jQuery(".reveal").each(function() {
+    elementTop = jQuery(this).offset().top;
+    positionYscroll = window.pageYOffset;
+    position = positionYscroll + windowHeight - elementVisible;
+    if (elementTop < position) {
+      jQuery(this).addClass("active");
+    } else {
+      jQuery(this).removeClass("active");
+    }
+  });
+}
+jQuery(window).scroll(reveal);
+setTimeout(reveal, 100);
+
+// Activar Swiper
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  effect: "cards",
+  loopAddBlankSlides: false,
+  
+  // If we need pagination
+  pagination: {
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+  },
+});

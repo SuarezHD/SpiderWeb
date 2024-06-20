@@ -2,6 +2,13 @@ h1, h2, h3, p, a, span, textarea{
     font-family: Montserrat;
 }
 
+.reveal {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
 /* Padding sections */
 
 .hero, .facts-of-spiderman, .remember { padding: 0px 20px }
