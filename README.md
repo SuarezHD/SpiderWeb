@@ -113,10 +113,26 @@ function showPopup(url) {
     });
 }
 
+### Menú de Navegación Desplegable
+
+// Muestra y oculta el menú de navegación al hacer clic en el icono de hamburguesa
+const menuIcon = document.getElementById('menu-icon');
+const navMenu = document.getElementById('nav-menu');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+
+// Cierra el menú cuando se hace clic en un enlace del menú
+document.querySelectorAll('#nav-menu a').forEach(item => {
+    item.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
 
 
+## Cómo Contribuir
 
-Cómo Contribuir
 Si deseas contribuir al desarrollo de SPIDER WEB, sigue los siguientes pasos:
 
 Realiza un fork del repositorio.
