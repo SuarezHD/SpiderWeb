@@ -93,6 +93,7 @@ El proyecto incluye varias funcionalidades interactivas y dinámicas. Aquí se d
 
 ### Popup de Video
 
+```javascript
 // Selecciona el enlace dentro de un elemento de lista y muestra el video en una ventana emergente (popup)
 document.querySelectorAll('.show-more a').forEach(item => {
     item.addEventListener('click', event => {
@@ -110,10 +111,13 @@ function showPopup(url) {
     popup.addEventListener('click', () => {
         document.body.removeChild(popup);
     });
-}
+} 
+
+```
 
 ### Menú de Navegación Desplegable
 
+```javascript
 // Muestra y oculta el menú de navegación al hacer clic en el icono de hamburguesa
 const menuIcon = document.getElementById('menu-icon');
 const navMenu = document.getElementById('nav-menu');
@@ -129,13 +133,105 @@ document.querySelectorAll('#nav-menu a').forEach(item => {
     });
 });
 
+```
+
+### Scroll para Cambiar el Estilo del Header
+
+```javascript
+
+const elemento = document.querySelector('#header');
+const aElements = document.getElementsByTagName('a');
+
+function manejarScroll() {
+    if (window.scrollY >= 100) {
+        elemento.classList.add('scrolled');
+        for (let a of aElements) {
+            a.classList.add('scrolled');
+        }
+    } else {
+        elemento.classList.remove('scrolled');
+        for (let a of aElements) {
+            a.classList.remove('scrolled');
+        }
+    }
+}
+
+window.addEventListener('scroll', manejarScroll);
+
+```
+
+### Popup para Videos desde Labels
+
+```javascript
+
+function showPopup(videoUrl) {
+    var popup = document.getElementById('popupContainer');
+    var popupVideo = document.getElementById('popupVideo');
+    
+    popupVideo.src = videoUrl; 
+    popup.style.display = 'block'; 
+}
+
+function closePopup() {
+    var popup = document.getElementById('popupContainer');
+    var popupVideo = document.getElementById('popupVideo');
+    
+    popupVideo.src = '';
+    popup.style.display = 'none';
+}
+
+```
+
+### Reveal Animations
+
+```javascript
+
+function reveal() {
+    var windowHeight = jQuery(window).height();
+    var elementVisible = 150;
+    var elementTop;
+    var positionYscroll = window.pageYOffset;
+    var position;
+
+    jQuery(".reveal").each(function() {
+        elementTop = jQuery(this).offset().top;
+        positionYscroll = window.pageYOffset;
+        position = positionYscroll + windowHeight - elementVisible;
+        if (elementTop < position) {
+            jQuery(this).addClass("active");
+        } else {
+            jQuery(this).removeClass("active");
+        }
+    });
+}
+jQuery(window).scroll(reveal);
+setTimeout(reveal, 100);
+
+```
+
+### Swiper Initialization
+
+```javascript
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    effect: "cards",
+    loopAddBlankSlides: false,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+```
 
 ## Cómo Contribuir
 
 Si deseas contribuir al desarrollo de SPIDER WEB, sigue los siguientes pasos:
 
-Realiza un fork del repositorio.
-Clona tu fork a tu máquina local.
-Crea una nueva rama para tu funcionalidad o corrección.
-Realiza tus cambios y realiza commit de los mismos.
-Envía un pull request con una descripción detallada de tus cambios.
+1. Realiza un fork del repositorio.
+2. Clona tu fork a tu máquina local.
+3. Crea una nueva rama para tu funcionalidad o corrección.
+4. Realiza tus cambios y realiza commit de los mismos.
+5. Envía un pull request con una descripción detallada de tus cambios.
