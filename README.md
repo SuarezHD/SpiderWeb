@@ -93,7 +93,6 @@ El proyecto incluye varias funcionalidades interactivas y dinámicas. Aquí se d
 
 ### Popup de Video
 
-```javascript
 // Selecciona el enlace dentro de un elemento de lista y muestra el video en una ventana emergente (popup)
 document.querySelectorAll('.show-more a').forEach(item => {
     item.addEventListener('click', event => {
