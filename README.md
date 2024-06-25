@@ -1,14 +1,14 @@
 # SPIDER WEB
 
-## Descripción
+## Description
 
 **SPIDER WEB** is a web project inspired by the iconic character Spider-Man. This website provides information, images and multimedia content related to Spider-Man, offering an interactive and visually appealing experience for fans of the character, in my view.
 
-Puedes visitar el sitio web en el siguiente enlace: [SPIDER WEB](https://suarezhd.github.io/)
+You can visit the website at the following link: [SPIDER WEB](https://suarezhd.github.io/)
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto está organizado de la siguiente manera:
+The project is organized as follows:
 
 ```text
 SPIDER WEB
@@ -39,42 +39,39 @@ SPIDER WEB
 └── README.md
 ```
 
-## Tecnologías Utilizadas
+## Used technology
 
-El proyecto utiliza las siguientes tecnologías:
+The project uses the following technologies:
 
-- **HTML**: Estructura y contenido del sitio web.
-- **CSS**: Estilización y diseño del sitio web, incluyendo el uso de preprocesadores CSS.
-  - **fonts.css**: Definición de fuentes personalizadas.
-  - **generics.css**: Estilos genéricos utilizados en el sitio web.
-  - **home.css**: Estilos específicos para la página de inicio.
-  - **reset.css**: Reinicio de estilos por defecto para asegurar la consistencia entre navegadores.
-  - **style.css**: Estilos principales del sitio web.
-  - **variables.css**: Definición de variables CSS para colores y otros estilos reutilizables.
-- **JavaScript**: Funcionalidades interactivas del sitio web.
-  - **functions.js**: Archivo de funciones JavaScript utilizadas en el sitio web.
-- **Imágenes y Fuentes**: Recursos multimedia utilizados en el sitio web.
-  - **assets/img**: Carpeta que contiene imágenes utilizadas en el sitio web.
-  - **assets/font**: Carpeta que contiene fuentes personalizadas utilizadas en el sitio web.
+- **HTML**: Structure and content of the website.
+- **CSS**: Styling and design of the website, including the use of CSS preprocessors.
+  - **fonts.css**: Definition of custom fonts.
+  - **generics.css**: Generic styles used on the website.
+  - **home.css**: Specific styles for the home page.
+  - **reset.css**: Reset default styles to ensure consistency between browsers.
+  - **style.css**: Main styles of the website.
+  - **variables.css**: Definition of CSS variables for colors and other reusable styles.
+- **JavaScript**: Interactive website functionalities.
+  - **functions.js**: Archive of JavaScript functions used on the website.
+- **Imágenes y Fuentes**: Multimedia resources used on the website.
+  - **assets/img**: Folder containing images used on the website.
+  - **assets/font**: Folder containing custom fonts used on the website.
 
-## Librerías Utilizadas
+## Used Libraries
 
-El proyecto hace uso de las siguientes librerías para mejorar la funcionalidad y la experiencia del usuario:
+The project makes use of the following libraries to improve functionality and user experience:
 
-- **[jQuery](https://jquery.com/)**: Librería JavaScript rápida, pequeña y rica en funciones que simplifica el manejo de eventos, la animación y las interacciones AJAX.
+- **[jQuery](https://jquery.com/)**: Fast, small, and feature-rich JavaScript library that simplifies event handling, animation, and AJAX interactions.
 - **[Swiper](https://swiperjs.com/)**: Swiper is the most modern free and open source mobile touch slider with hardware accelerated transitions and amazing native behavior.
-- **[Font Awesome](https://fontawesome.com/)**: Librería de iconos que proporciona iconos vectoriales y logotipos sociales para el uso en el sitio web.
+- **[Font Awesome](https://fontawesome.com/)**: Icon library providing vector icons and social logos for website use.
 
+# Featured Features
 
-Claro, aquí está la sección "Funcionalidades Destacadas" con las funciones JavaScript añadidas para que puedas incluirla en tu README.md:
+The project includes several interactive and dynamic functionalities. Here are some of the notable features:
 
-# Funcionalidades Destacadas
+## JavaScript functions
 
-El proyecto incluye varias funcionalidades interactivas y dinámicas. Aquí se describen algunas de las funciones más destacadas:
-
-## Funciones JavaScript
-
-### Popup de Video
+### Video Popup
 
 ```javascript
 // Selecciona el enlace dentro de un elemento de lista y muestra el video en una ventana emergente (popup)
@@ -98,7 +95,7 @@ function showPopup(url) {
 
 ```
 
-### Menú de Navegación Desplegable
+### Dropdown Navigation Menu
 
 ```javascript
 // Muestra y oculta el menú de navegación al hacer clic en el icono de hamburguesa
@@ -118,7 +115,7 @@ document.querySelectorAll('#nav-menu a').forEach(item => {
 
 ```
 
-### Scroll para Cambiar el Estilo del Header
+### Scroll to Change Header Style
 
 ```javascript
 
@@ -143,7 +140,7 @@ window.addEventListener('scroll', manejarScroll);
 
 ```
 
-### Popup para Videos desde Labels
+### Popup for Videos from Labels
 
 ```javascript
 
@@ -164,6 +161,7 @@ function closePopup() {
 }
 
 ```
+
 
 ### Reveal Animations
 
@@ -209,12 +207,12 @@ const swiper = new Swiper('.swiper', {
 
 ```
 
-## Cómo Contribuir
+## How to Contribute
 
-Si deseas contribuir al desarrollo de SPIDER WEB, sigue los siguientes pasos:
+If you want to contribute to the development of SPIDER WEB, follow the following steps:
 
-1. Realiza un fork del repositorio.
-2. Clona tu fork a tu máquina local.
-3. Crea una nueva rama para tu funcionalidad o corrección.
-4. Realiza tus cambios y realiza commit de los mismos.
-5. Envía un pull request con una descripción detallada de tus cambios.
+1. Fork the repository.
+2. Clone your fork to your local machine.
+3. Create a new branch for your feature or fix.
+4. Make your changes and commit them.
+5. Submit a pull request with a detailed description of your changes.
