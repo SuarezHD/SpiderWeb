@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**SPIDER WEB** es un proyecto web inspirado en el icónico personaje de Spider-Man. Este sitio web proporciona información, imágenes y contenido multimedia relacionados con Spider-Man, ofreciendo una experiencia interactiva y visualmente atractiva para los fans del personaje, desde mi punto de vista.
+**SPIDER WEB** is a web project inspired by the iconic character Spider-Man. This website provides information, images and multimedia content related to Spider-Man, offering an interactive and visually appealing experience for fans of the character, in my view.
 
 Puedes visitar el sitio web en el siguiente enlace: [SPIDER WEB](https://suarezhd.github.io/)
 
