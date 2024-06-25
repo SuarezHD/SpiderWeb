@@ -126,6 +126,7 @@ document.querySelectorAll('#nav-menu a').forEach(item => {
         navMenu.classList.remove('active');
     });
 });
+
 Cómo Contribuir
 Si deseas contribuir al desarrollo de SPIDER WEB, sigue los siguientes pasos:
 

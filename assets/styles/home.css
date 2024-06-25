@@ -98,7 +98,7 @@ header nav .logo a.scrolled:hover { color: var(--black); }
 
 /* Section gallery */
 
-.gallery { height: 80vh; display: flex; align-items: center; justify-content: center; }
+.gallery { height: 80vh; display: flex; align-items: center; justify-content: center; overflow: hidden;}
 .gallery .container { max-width: 1250px; width: 100%; }
 
 .gallery .container .swiper { width: 80%; height: 70vh; }
