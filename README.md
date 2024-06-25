@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**SPIDER WEB** es un proyecto web inspirado en el icónico personaje de Spider-Man. Este sitio web proporciona información, imágenes y contenido multimedia relacionados con Spider-Man, ofreciendo una experiencia interactiva y visualmente atractiva para los fans del personaje. 
+**SPIDER WEB** es un proyecto web inspirado en el icónico personaje de Spider-Man. Este sitio web proporciona información, imágenes y contenido multimedia relacionados con Spider-Man, ofreciendo una experiencia interactiva y visualmente atractiva para los fans del personaje, desde mi punto de vista.
 
 Puedes visitar el sitio web en el siguiente enlace: [SPIDER WEB](https://suarezhd.github.io/)
 
@@ -79,16 +79,19 @@ El proyecto utiliza las siguientes tecnologías:
 El proyecto hace uso de las siguientes librerías para mejorar la funcionalidad y la experiencia del usuario:
 
 - **[jQuery](https://jquery.com/)**: Librería JavaScript rápida, pequeña y rica en funciones que simplifica el manejo de eventos, la animación y las interacciones AJAX.
-- **[Bootstrap](https://getbootstrap.com/)**: Framework CSS de código abierto dirigido al desarrollo de sitios y aplicaciones web responsivos y móviles.
+- **[Swiper](https://swiperjs.com/)**: Swiper is the most modern free and open source mobile touch slider with hardware accelerated transitions and amazing native behavior.
 - **[Font Awesome](https://fontawesome.com/)**: Librería de iconos que proporciona iconos vectoriales y logotipos sociales para el uso en el sitio web.
 
-## Funcionalidades Destacadas
+
+Claro, aquí está la sección "Funcionalidades Destacadas" con las funciones JavaScript añadidas para que puedas incluirla en tu README.md:
+
+# Funcionalidades Destacadas
 
 El proyecto incluye varias funcionalidades interactivas y dinámicas. Aquí se describen algunas de las funciones más destacadas:
 
-### Funciones JavaScript
+## Funciones JavaScript
 
-1. **Popup de Video**
+### Popup de Video
 
 ```javascript
 // Selecciona el enlace dentro de un elemento de lista y muestra el video en una ventana emergente (popup)
@@ -109,23 +112,9 @@ function showPopup(url) {
         document.body.removeChild(popup);
     });
 }
-Menú de Navegación Desplegable
-javascript
-Copiar código
-// Muestra y oculta el menú de navegación al hacer clic en el icono de hamburguesa
-const menuIcon = document.getElementById('menu-icon');
-const navMenu = document.getElementById('nav-menu');
 
-menuIcon.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
 
-// Cierra el menú cuando se hace clic en un enlace del menú
-document.querySelectorAll('#nav-menu a').forEach(item => {
-    item.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
-});
+
 
 Cómo Contribuir
 Si deseas contribuir al desarrollo de SPIDER WEB, sigue los siguientes pasos:
