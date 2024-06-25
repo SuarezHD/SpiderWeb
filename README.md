@@ -13,43 +13,27 @@ El proyecto está organizado de la siguiente manera:
 ```text
 SPIDER WEB
 │
+├── config
+│   └── config.json
+│
+├── public
+│   ├── assets
+│   │   ├── fonts
+│   │   │   └── marvel
+│   │   └── images
+│   │       └── gallery
+│   ├── js
+│   │   └── functions.js
+│   └── styles
+│       ├── fonts.css
+│       ├── generics.css
+│       ├── home.css
+│       ├── reset.css
+│       ├── style.css
+│       └── variables.css
+│
 ├── .vscode
 │   └── settings.json
-│
-├── assets
-│   ├── font
-│   │   ├── marvel.eot
-│   │   ├── marvel.svg
-│   │   ├── marvel.ttf
-│   │   ├── marvel.woff
-│   │   └── marvel.woff2
-│   └── img
-│       ├── arania-icono.ico
-│       ├── gallery-1.jpg
-│       ├── gallery-2.jpg
-│       ├── gallery-3.jpeg
-│       ├── gallery-4.jpeg
-│       ├── gallery-4.jpg
-│       ├── gallery-5.jpg
-│       ├── gallery-6.jpg
-│       ├── spiderman-616.jpeg
-│       ├── spiderpunk.jpeg
-│       ├── SpiderWeb.png
-│       ├── SpiderWeb.svg
-│       ├── spidey-colgando.png
-│       ├── tiktokLogo.svg
-│       └── xLogo.svg
-│
-├── js
-│   └── functions.js
-│
-├── styles
-│   ├── fonts.css
-│   ├── generics.css
-│   ├── home.css
-│   ├── reset.css
-│   ├── style.css
-│   └── variables.css
 │
 ├── index.html
 └── README.md
